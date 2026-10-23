@@ -1,9 +1,10 @@
-# Program to calculate Simple Interest
+import sys
 
-p = float(input("Enter the principal amount: "))
-r = float(input("Enter the rate of interest: "))
-t = float(input("Enter the time in years: "))
+def SI(principal, interest, time):
+    return(principal*interest*time)/100
 
-si = (p * r * t) / 100
 
-print("Simple Interest =", si)
+if __name__=="__main__":
+    p = int(sys.argv[1])
+    i = int(sys.argv[1])
+    t = int(sys.argv[1])
